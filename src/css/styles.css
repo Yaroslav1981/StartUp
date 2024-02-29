@@ -1,0 +1,55 @@
+@import 'normalize.css';
+hr {
+  margin: 20px auto;
+  color: #F05F44;
+  border: 3px solid #F05F44;
+  max-width: 65px;
+  opacity: 1;
+}
+
+body, html {
+  margin: 0;
+  padding: 0;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 400;
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+  background-size: fixed;
+  text-align: center;
+}
+body h1, html h1 {
+  color: #e2dbdb;
+  font-size: 3rem;
+  text-transform: uppercase;
+  margin-bottom: 14rem;
+}
+body .btn-xl, html .btn-xl {
+  padding: 1rem 2rem;
+  border-radius: 30px;
+  background-color: #F05F44;
+  text-transform: uppercase;
+  border: none;
+  position: relative;
+  width: 220px;
+  transition: all 0.3s;
+}
+body .btn-xl:hover, html .btn-xl:hover {
+  background-color: #b94f3c;
+  transform: scale(1.04);
+}
+body .btn-xl::before, html .btn-xl::before {
+  content: "";
+  position: absolute;
+  width: 50px;
+  height: 2px;
+  background-color: #F05F44;
+  top: -20px;
+  left: 50%;
+  right: 50%;
+  transform: translateX(-50%);
+  transition: all 0.3s;
+}
+
+body {
+  height: 100vh;
+}
